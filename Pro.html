@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="h">
+        <div class="n">
+            <h1 class="s"> PORTFOLIO WEBSITE</h1>
+        </div>
+        <header>
+            <button onclick="navigateToabout()">About</button>
+            <p id="vikas"></p>
+            <button class="v" onclick="navigateTo('projects')">Projects</button>
+            <button onclick="navigateTo('contact')">Contact</button>
+            <a href="https://www.linkedin.com/in/sumanth-vikas-nagathota-993768229" target="_blank"><button id="linkedinBtn">LinkedIn</button></a>
+        </header>
+
+        <main>
+            <section id="about" class="content-section">
+                <!-- About content goes here -->
+            </section>
+
+            <section id="projects" class="content-section">
+                <div class="vikas">
+                    <h2>Add Project</h2>
+                    <input type="text" id="projectName" placeholder="Project Name">
+                    <input type="text" id="projectDetails" placeholder="Project Details">
+                    <button onclick="addProject()">Add</button>
+                </div>
+
+                <div id="projectsView">
+                    <!-- Project details dynamically added here -->
+                </div>
+            </section>
+
+            <section id="contact" class="content-section">
+                <!-- Contact form goes here -->
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
